@@ -1,0 +1,150 @@
+@font-face {
+	font-family: 'Nunito';
+	font-style: normal;
+	font-weight: 300;
+	src: local('Nunito-Light'), url(http://fonts.gstatic.com/s/nunito/v7/1TiHc9yag0wq3lDO9cw0vpBw1xU1rKptJj_0jans920.woff2) format('woff2'), url(http://fonts.gstatic.com/s/nunito/v7/1TiHc9yag0wq3lDO9cw0vrO3LdcAZYWl9Si6vvxL-qU.woff) format('woff');
+}
+body{
+	margin: 0px;
+	font-size: 20px;
+	font-family: 'Nunito', sans-serif;
+	/*font-family: sans-serif;*/
+	color: #333;
+}
+
+h1{
+	margin: 0px;
+	padding: 30px 0px;
+	font-size: 45px;
+	font-weight: bold;
+}
+
+#menubar{
+	padding: 20px;
+	margin-bottom: 20px;
+	background: #eee;
+	font-size: 23px;
+}
+
+#content{
+	text-align: center;
+}
+
+#maincol{
+	vertical-align: top;
+	text-align: left;
+	margin: 0px 5px;
+	display: inline-block;
+	width: 800px;
+	max-width: 90%;
+}
+
+#sidebar{
+	vertical-align: top;
+	text-align: left;
+	margin: 0px 5px;
+	display: inline-block;
+	width: 300px;
+	max-width: 90%;
+	background: #ddd;
+
+	padding: 20px;
+	box-sizing: border-box;
+}
+
+.sidebar_content{
+	padding: 20px;
+}
+
+.step{
+	margin-bottom: 40px;
+}
+
+.step_title{
+	padding: 50px 40px;
+	background: #eee;
+	cursor: pointer;
+	font-size: 35px;
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.step_title:hover{
+	background: #f6f6f6;
+}
+
+.step_subtitle{
+	font-size: 22px;
+	padding-top: 20px;
+	display: none;
+}
+
+.step_content{
+	border: 1px solid #eee;
+	border-top: 0px;
+	display: none;
+}
+
+.unit{
+	padding: 0px;
+	border-bottom: 1px solid #eee;
+	font-size: 0px;
+}
+
+.unit_title, .unit_description{
+	vertical-align: top;
+	display: inline-block;
+	padding: 20px 20px;
+	box-sizing: border-box;
+	font-size: 20px;
+}
+
+.unit_title{
+	width: 110px;
+	text-align: center;
+}
+
+.unit_description{
+	width: 80%;
+	width: calc(100% - 110px);
+	text-decoration: none;
+	/*color: #4ad;*/
+	color: #777;
+	border-left: 1px solid #eee;
+}
+
+.unit_description:hover{
+	/*background: #5be;*/
+	background: #aaa;
+	color: #fff;
+}
+
+
+.step_content .unit:last-of-type{
+	border: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*first breakpoint*/
+@media (min-width:600px) {
+}
