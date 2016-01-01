@@ -35,26 +35,56 @@
 		<div class="special_section before_you_begin">
 			<h2>Before you begin</h2>
 			<p>
-				Make sure you're very comfortable with for loops.
+				Make sure you're very comfortable with <b>for loops</b>.
 			</p>
 			<p>
-				If you can successfully type a for loop right now without looking at any examples, you're ready to go.  If not, you'll want to practice some more.
+				If you can successfully type a <b>for loop</b> right now without looking at any examples, you're ready to go.  If not, you'll want to practice some more.
 			</p>
+		</div>
+
+		<p>Ready? Let's do this.</p>
+
+
+
+		<div class="special_section getting_started">
+			<h2>Getting Started</h2>
+			<p>
+				Copy and paste the following code into a new HTML document:
+			</p>
+			<pre><code class="language-markup">
+				&lt;!DOCTYPE html&gt;
+				&lt;html&gt;
+				&lt;head&gt;
+					&lt;title&gt;&lt;/title&gt;
+					&lt;meta charset="UTF-8"&gt;
+				&lt;/head&gt;
+				&lt;body&gt;
+
+
+				&lt;script&gt;
+
+				&lt;/script&gt;
+				&lt;/body&gt;
+				&lt;/html&gt;
+			</code></pre>
+
+			<p>
+				For convenience, you can start with this HTML document to type the code from the lesson.
+			</p>
+			<p>Remember to put all scripts between the script tags.</p>
 		</div>
 
 
 
-
-
-		<p>Ready? Let's do this.</p>
+		
 
 
 		<div class="section">
 			<h2>What is an array and why should you care?</h2>
 
-			<p>An array is a list of things.</p>
+			<p>An <b>array</b> is a list of things.</p>
 
-			<p>Those things can be strings, numbers, variables, functions, or even other arrays.</p>
+			<p>Those things can be <b>strings</b>, <b>numbers</b>, <b>variables</b>, <b>functions</b>, or even other <b>arrays</b>.</p>
 
 			<p>An array is formatted like this:</p>
 			
@@ -62,6 +92,9 @@
 
 			<p>Arrays are cool because they make lists much easier to keep track of.</p>
 		</div>
+
+
+		
 
 
 		<div class="section">
@@ -81,7 +114,27 @@
 				console.log(names[0]);
 			</code></pre>
 
-			<p>You'll notice that <code>names[0]</code> will give you 'Bowser'.  Try replacing the 0 with a 1 or a 2.  What happens?</p>
+			<p>You'll notice that <code>names[0]</code> will give you 'Bowser'.</p>
+
+			<p>Try replacing the 0 with a 1 or a 2.  What happens?</p>
+
+
+			<div class="special_section formatting_note">
+				<h3>Formatting note: Spacing in arrays</h3>
+
+				<p>Spaces and line breaks between array elements don't matter.</p>
+
+				<p>The following code works just fine:</p>
+
+				<pre><code>
+					var names = [ 'item a' ,   'item b','item c',
+								'item d',
+								'item e',
+								'item f', 'item g'
+								];
+					console.log(names[0]);
+				</code></pre>
+			</div>
 		</div>
 
 
@@ -93,8 +146,17 @@
 
 			<p>When you see something like <code>names[2]</code>, the number is called the index, and it gives you the position of an item in the array.</p>
 
-			<p>Warning about the array index:</p>
-			<p>The array index starts counting at 0.  Many errors happen because people forget that the first item in the array is 0.</p>
+			
+
+			<div class="special_section warning">
+				<h3>Warning: Array index starts at zero</h3>
+
+				<p>The array index starts counting at 0.</p>
+
+				<p>Many errors happen because people forget that the first item in the array is 0.</p>
+
+			</div>
+
 		</div>
 
 
@@ -104,7 +166,7 @@
 		<div class="section">
 			<h2>Array length</h2>
 
-			<p>Let's say you want to get the length of your list.  Here's how that would work (type it in):</p>
+			<p>Here's how you would get the length of a list (type it in):</p>
 
 			<pre><code>
 				var names = ['Bowser','Ganon','Shmebulock'];
@@ -137,7 +199,13 @@
 
 			<pre><code>
 				var x = 'this is x';
-				var stuff = ['strings work', 12, x, ['inner array item 1', 'inner array item 2'], 'last item'];
+				var stuff = [
+						'strings work',
+						12,
+						x,
+						['inner array item 1', 'inner array item 2'], 
+						'last item'
+				];
 
 				console.log( stuff[0] ); // string
 				console.log( stuff[1] ); // number
@@ -151,7 +219,9 @@
 			<p>If you want to a function inside an array, you can do that too!  Try the following example:</p>
 
 			<pre><code>
-				var stuff = ['first item', function(){ alert('hi'); }, 'last item'];
+				var stuff = ['first item',
+							function(){ alert('hi'); },
+							'last item'];
 
 				console.log( stuff[0] ); // string
 				console.log( stuff[1] ); // function
@@ -204,6 +274,7 @@
 
 
 
+		<!--
 		<hr>
 		<h2>Content Samples</h2>
 
@@ -253,20 +324,31 @@
 			<li>Point 3</li>
 		</ol>
 
-		<p>Warnings</p>
+		<p>Warnings - red</p>
 
-		<p>Terminology highlights</p>
+		<p>Bold words</p>
+
+		<p>Before you begin - yellow/gold/tan</p>
+
+		<p>Standard starting html - green</p>
+
+		<p>Formatting note - light blue (slight green)</p>
+
+		<p>Terminology highlights - orange</p>
+
+		<p>Important notes (try to categorize first; use this as a last resort)</p>
 
 		<p>Exercises</p>
+		-->
+
+
 	</div>
 
 
 
 
 	<div id="sidebar">
-		<div class="sidebar_title">Sidebar Title</div>
-		Sidebar content
-		<a href="#">Table of Contents</a>
+		<a href="#">Course Map</a>
 		<a href="#">Contact</a>
 		<a href="#">Log out</a>
 	</div>
@@ -274,9 +356,19 @@
 
 
 
+<div id="footer">
+	&copy; Simple Steps Code
+</div>
+
+
+
 
 <script>
-// allow normal indenting in code samples
+//**********************************************************
+//
+// ALLOW NORMAL INDENTING IN CODE SAMPLES
+//
+//**********************************************************
 (function(){
 	var pres = document.getElementsByTagName('pre');
 	for(var i=0; i<pres.length; i++){
