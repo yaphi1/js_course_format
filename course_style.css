@@ -70,6 +70,33 @@ a{
 
 
 
+input{
+	padding: 15px;
+	font-size: 24px;
+	font-family: Nunito, sans-serif;
+	width: 400px;
+	max-width: 90%;
+	box-sizing: border-box;
+	border-radius: 3px;
+	border: 1px solid #ddd;
+}
+
+input[type=checkbox]{
+	width: auto;
+}
+
+input[type=submit]{
+	background: #6ED19C;
+	border: none;
+	color: #fff;
+	cursor: pointer;
+}
+
+input[type=submit]:hover{
+	background: #7ea;
+}
+
+
 
 
 /************************************************************
@@ -119,7 +146,7 @@ LAYOUT STRUCTURE
 #sidebar{
 	vertical-align: top;
 	text-align: left;
-	margin: 0px 5px;
+	margin: 20px 5px 0px;
 	display: inline-block;
 	width: 300px;
 	max-width: 90%;
