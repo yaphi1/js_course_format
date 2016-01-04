@@ -16,6 +16,8 @@ body{
 	color: #333;
 	background: #FCFFFD;
 
+	line-height: 1.5;
+
 	/*background: #4ad;*/
 }
 
@@ -43,18 +45,15 @@ h3{
 }
 
 p{
-	line-height: 1.5;
 	margin: 20px;
 }
 
 pre{
 	background: #333;
 	color: #eee;
+	font-size: 19px;
 }
 
-li{
-	margin-top: 40px;
-}
 
 b{
 	font-weight: bold;
@@ -64,9 +63,50 @@ b{
 	border-radius: 4px;
 }
 
+strong{
+	font-weight: 700;
+	font-family: sans-serif;
+}
+
 a{
 	color: #389B66;
 }
+
+
+
+
+ol{
+	counter-reset: my_counter;
+	margin: 0px;
+	padding: 0px 20px 0px 70px;
+}
+
+ol > li{
+	margin-top: 60px;
+	position: relative;
+	list-style: none;
+}
+
+ol > li:before{
+	content: counter(my_counter);
+	counter-increment: my_counter;
+	position: absolute;
+	top: -0.3em;
+	left: -1em;
+	font-weight: 700;
+
+	color: #6ED19C;
+	font-size: 50px;
+}
+
+li p{
+	margin: 20px 0px;
+}
+
+ul > li{
+	padding-bottom: 15px;
+}
+
 
 
 
